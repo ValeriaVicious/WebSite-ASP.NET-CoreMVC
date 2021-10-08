@@ -4,4 +4,26 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="Views\Shared\CSSPartial.cshtml" />
+    <Content Remove="Views\Shared\SidebarPartial.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Views\Shared\CSSPartial.cshtml" />
+    <Compile Include="Views\Shared\SidebarPartial.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\" />
+    <Folder Include="Areas\Controllers\" />
+    <Folder Include="Areas\Views\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Models\ViewComponents\" />
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\sass\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Service\" />
+  </ItemGroup>
+
 </Project>
